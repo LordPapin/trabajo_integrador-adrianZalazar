@@ -62,7 +62,7 @@ header ul a {
 
 main {
     margin-top: 1rem;
-    height: calc(100% - var(--header-height) - 1rem - 17px);
+    height: calc(100% - var(--header-height) - 1rem - 21px);
 }
 
 .login-form-container, .login-form-container form {
