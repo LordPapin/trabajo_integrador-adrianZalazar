@@ -1,0 +1,19 @@
+{
+  "name": "racoon-store",
+  "version": "1.0.0",
+  "description": "Página de venta de videojuegos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordPapin/trabajo_integrador-adrianZalazar.git"
+  },
+  "author": "Adrian Zalazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordPapin/trabajo_integrador-adrianZalazar/issues"
+  },
+  "homepage": "https://github.com/LordPapin/trabajo_integrador-adrianZalazar#readme"
+}
