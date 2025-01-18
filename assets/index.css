@@ -49,10 +49,6 @@
     box-shadow: 0 2px 3px 0 #fcfcfc, 0 1px 2px 0 #fafafa;
 }
 
-.tarjeta-juego-imagen {
-    /* max-width: 150px; */
-    
-}
 .tarjeta-juego-imagen img {
     max-height: 100%;
     max-width: 100%;
