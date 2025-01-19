@@ -83,7 +83,7 @@ main {
     gap: .25rem;
 }
 
-button {
+button, .button {
     border-radius: 18px;
     color: var(--main-primary-color);
     background-color: transparent;
@@ -93,7 +93,6 @@ button {
     appearance: none;
     border-color: rgba(255, 255, 255, 0.2);
     height: 34px;
-    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,9 +101,11 @@ button {
     font-weight: 500;
     transition: background-color .5s ease;
     width: 100%;
+    border-color: transparent;
+    text-decoration: none;
 }
 button {
-    border-color: transparent;
+    padding: 16px;
 }
 
 .button-primary {
@@ -142,4 +143,33 @@ input[type='number'] {
 
 .form-button {
     align-self: end;
+}
+
+.negrita {
+    font-weight: 500;
+}
+
+.color-blanco {
+    color: var(--main-white) !important;
+}
+
+.grilla-item {
+    border-bottom: 1px solid var(--main-gray);
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.grilla-item-campo {
+    color: var(--main-gray);    
+}
+
+.grilla-item-valor {
+    align-self: end;
+    color: var(--main-white);
+}
+
+@media screen and (min-width: 769px) {    
+    .grilla {
+        width: 100%;
+    }    
 }

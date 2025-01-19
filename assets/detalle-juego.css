@@ -55,20 +55,6 @@ main > h2 {
     gap: .5rem; 
 }
  
-.juego-compra-detalle-item {
-    border-bottom: 1px solid var(--main-gray);
-    padding: .5rem 0;
-    display: flex;
-    justify-content: space-between;
-}
-.juego-compra-detalle-item-campo {
-    color: var(--main-gray);    
-}
-.juego-compra-detalle-item-valor {
-    align-self: end;
-    color: var(--main-white);
-}
-
 @media screen and (min-width: 769px) {
     .tarjeta-juego-imagen:hover {
         position: absolute;
@@ -82,9 +68,7 @@ main > h2 {
     .juego-detalle {
         width: 50%;
     }
-    .juego-compra-detalle {
-        width: 100%;
-    }
+    
     .juego-compra {
         width: 30%;
     }
