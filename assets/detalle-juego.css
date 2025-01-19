@@ -4,7 +4,7 @@ main > h2 {
 
 .juego-imagenes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
     justify-content: center;
     gap: 2rem;
 }
@@ -12,6 +12,7 @@ main > h2 {
 .game-section {
     padding: 0 2rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tarjeta-juego-imagen {
@@ -20,14 +21,7 @@ main > h2 {
     border-radius: 8px;
     transition: ease width .5s;
 }
-.tarjeta-juego-imagen:hover {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200%;
-    height: 200%;
-    z-index: 2;
-}
+
 .tarjeta-juego-contenedor {
     position: relative;
 }
@@ -40,13 +34,11 @@ main > h2 {
 .juego-detalle {    
     display: flex;
     flex-direction: column;
-    width: 50%;
 }
 
 .juego-compra {
     display: flex;
     flex-direction: column;
-    width: 30%;
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
@@ -63,9 +55,6 @@ main > h2 {
     gap: .5rem; 
 }
  
-.juego-compra-detalle {
-width: 80%;
-}
 .juego-compra-detalle-item {
     border-bottom: 1px solid var(--main-gray);
     padding: .5rem 0;
@@ -78,4 +67,25 @@ width: 80%;
 .juego-compra-detalle-item-valor {
     align-self: end;
     color: var(--main-white);
+}
+
+@media screen and (min-width: 769px) {
+    .tarjeta-juego-imagen:hover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        z-index: 2;
+    }
+
+    .juego-detalle {
+        width: 50%;
+    }
+    .juego-compra-detalle {
+        width: 100%;
+    }
+    .juego-compra {
+        width: 30%;
+    }
 }
