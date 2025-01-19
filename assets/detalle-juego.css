@@ -11,6 +11,7 @@ main > h2 {
 
 .game-section {
     padding: 0 2rem;
+    display: flex;
 }
 
 .tarjeta-juego-imagen {
@@ -36,13 +37,45 @@ main > h2 {
     max-width: 100%;
     border-radius: 8px;
 }
-
-.tarjeta-juego-detalle {
-    padding: .5rem 1rem 1rem 1rem;
+.juego-detalle {    
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+
+.juego-compra {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
     gap: 1rem;
 }
-.tarjeta-juego-precio {
-    text-align: end;
+
+.juego-compra-precio {
+    font-weight: 500;
+}
+
+.juego-compra-comandos {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem; 
+}
+ 
+.juego-compra-detalle {
+width: 80%;
+}
+.juego-compra-detalle-item {
+    border-bottom: 1px solid var(--main-gray);
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.juego-compra-detalle-item-campo {
+    color: var(--main-gray);    
+}
+.juego-compra-detalle-item-valor {
+    align-self: end;
+    color: var(--main-white);
 }
