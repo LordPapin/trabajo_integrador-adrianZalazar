@@ -1,0 +1,75 @@
+main > h2 {
+    padding-left: 2rem;
+}
+
+.juego-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.game-section {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta-juego-imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: ease width .5s;
+}
+
+.tarjeta-juego-contenedor {
+    position: relative;
+}
+
+.tarjeta-juego-imagen img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+.juego-detalle {    
+    display: flex;
+    flex-direction: column;
+}
+
+.juego-compra {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+}
+
+.juego-compra-precio {
+    font-weight: 500;
+}
+
+.juego-compra-comandos {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem; 
+}
+ 
+@media screen and (min-width: 769px) {
+    .tarjeta-juego-imagen:hover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        z-index: 2;
+    }
+
+    .juego-detalle {
+        width: 50%;
+    }
+    
+    .juego-compra {
+        width: 30%;
+    }
+}

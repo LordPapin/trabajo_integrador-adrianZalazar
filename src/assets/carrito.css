@@ -1,0 +1,86 @@
+main > h2 {
+    padding-left: 2rem;
+}
+
+.juego-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cart-section {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tarjeta-juego-contenedor {
+    position: relative;
+}
+
+.juego-detalle {    
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(112px, auto));
+    grid-auto-flow: row;
+}
+
+.juego-compra {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+}
+
+.juego-compra-precio {
+    font-weight: 500;
+}
+
+.juego-compra-comandos {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem; 
+}
+
+
+@media screen and (min-width: 769px) {
+    .juego-detalle {
+        width: 50%;
+    }
+    .juego-compra-detalle {
+        width: 100%;
+    }
+    .juego-compra {
+        width: 30%;
+    }
+}
+
+.tarjeta-juego {
+    box-shadow: 0 1px 2px 0 #fafafa;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+    border-radius: 8px;
+}
+
+.tarjeta-juego-imagen img {
+    max-height: 100%;
+    max-width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tarjeta-juego-detalle {
+    padding: .5rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tarjeta-juego-precio {
+    text-align: end;
+}
